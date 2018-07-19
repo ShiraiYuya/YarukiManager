@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:descendantFocusability="blocksDescendants"
+    android:id="@+id/wrapper"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:minHeight="80dp"
+    >
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Large Text"
+        android:id="@+id/titleView" />
+
+    <LinearLayout
+        android:id="@+id/wrapbtn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+        <ImageButton
+            android:id="@+id/stampView1"
+            android:clickable="false"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginRight="5dp"
+            android:scaleType="centerCrop"
+            android:background="@null"
+            android:focusableInTouchMode = "false"
+            android:focusable = "false"
+            app:srcCompat="@drawable/stamp2" />
+        <ImageButton
+            android:id="@+id/stampView2"
+            android:clickable="false"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginRight="5dp"
+            android:scaleType="centerCrop"
+            android:background="@null"
+            android:focusableInTouchMode = "false"
+            android:focusable = "false"
+            app:srcCompat="@drawable/stamp2" />
+        <ImageButton
+            android:id="@+id/stampView3"
+            android:clickable="false"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:scaleType="centerCrop"
+            android:background="@null"
+            android:focusableInTouchMode = "false"
+            android:focusable = "false"
+            app:srcCompat="@drawable/stamp2" />
+
+    </LinearLayout>
+
+</LinearLayout>
